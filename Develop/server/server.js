@@ -18,6 +18,12 @@ const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:3000', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
+
+
 // Serve up static assets
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
