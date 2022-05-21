@@ -5,4 +5,4 @@
 ## save and remove books from your list
 ## log out safely 
 
-## ![Test Image 1](book-page.png)
+## ![Example Image](book-page.png)
