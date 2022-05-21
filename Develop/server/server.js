@@ -18,7 +18,7 @@ const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:3000/book-search', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/book-search', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
